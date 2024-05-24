@@ -1,0 +1,8 @@
+[http]
+proxy = "http://sysproxy.wal-mart.com:8080"
+
+[registry]
+default = "artifactory"
+
+[registries.artifactory]
+index="sparse+https://cargo.ci.artifacts.walmart.com/artifactory/api/cargo/rust-lang-cargo-release-remote/index/"

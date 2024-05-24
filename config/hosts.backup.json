@@ -1,0 +1,65 @@
+{
+  "hosts": {
+    "dev": [
+      {
+        "hostname": "tstr000300",
+        "purpose": "front end server",
+        "services": [
+          "dev-sdiportal",
+          "dev-celery",
+          "dev-managerepos",
+          "dev-scheduler"
+        ]
+      },
+      {
+        "hostname": "tstc000203",
+        "purpose": "Maxscale server",
+        "services": ["maxscale", "maxscale-api"]
+      },
+      {
+        "hostname": "tstc000206",
+        "purpose": "playbook runner",
+        "services": ["dev-managerepos", "dev-playbookrunner", "dev-scheduler"]
+      },
+      {
+        "hostname": "tstc000207",
+        "purpose": "playbook runner",
+        "services": ["dev-managerepos", "dev-playbookrunner", "dev-scheduler"]
+      },
+      {
+        "hostname": "tstr000500",
+        "purpose": "collector",
+        "services": [
+          "dev-celerybeat",
+          "dev-celeryflower",
+          "dev-collectorbroadcast",
+          "dev-collectorworker",
+          "dev-dccollector",
+          "dev-hocollector",
+          "dev-storecollector",
+          "mariabd"
+        ]
+      },
+      {
+        "hostname": "tstr000501",
+        "purpose": "collector",
+        "services": ["dev-collectorbroadcast", "dev-collectorworker"]
+      }
+    ],
+    "stage": [
+      {
+        "hostname": "testhost",
+        "purpose": "testpurpose",
+        "services": ["svc1"]
+      }
+    ],
+    "prod": [
+      {
+        "hostname": "oser000300",
+        "purpose": "front end server",
+        "services": ["prod-sdiportal"]
+      }
+    ]
+  }
+}
+

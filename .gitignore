@@ -1,0 +1,7 @@
+/target
+.vscode
+.dir_status
+frontend/src/AppBook.jsx
+__pycache__/
+venv/
+2
